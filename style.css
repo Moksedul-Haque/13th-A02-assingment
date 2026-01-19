@@ -175,6 +175,116 @@ background: linear-gradient(to right, red, yellow, green)
   margin-right: 5px;
 }
 
+/* about podcast */
+
+.podcast{
+  width:100%;
+  
+margin-left: auto;
+display: grid;
+padding: 60px 20px;
+background-color: #210f3a;
+}
+.about{
+
+ 
+  margin-top: 100px;
+}
+.about h1{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.about .someText{
+  color: aliceblue;
+  text-align: center;
+}
+.about .someText2{
+  color: aliceblue;
+  margin-top: 90px;
+  text-align: center;
+}
+.cards{
+  max-width: 1200px;
+  height:100px;
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin:40px auto 0;
+  gap: 20px;
+
+
+}
+.card{
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  
+}
+.card h5{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 255, 0);
+  font-weight: 900;
+}
+.card p{
+  color: white;
+}
+.card p{
+  font-size: 10px;
+}
+
+.techwave{
+  width: 100%;
+ background-color: #210f3a;
+
+
+  
+}
+.techwave h3{
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding: 30px 0;
+}
+
+.boxs{
+  display: grid;
+grid-template-columns: repeat(3, 1fr) ;
+grid-template-rows: repeat(3,1fr);
+gap: 20px;
+max-width:1200px;
+margin: 250px  0x;
+
+
+}
+.box{
+  background-color: #412567;
+  height: 150px;
+  border-radius: 15px;
+}
+.audioQuality{
+ 
+ grid-row: span 2;
+background-color: aqua;
+height: 310px;
+}
+.box2{
+  grid-column: span 2;
+}
+.box3{
+  grid-column: span 2;
+}
+.box4{
+  grid-column: span 2;
+}
+
+.techwave img,h6,p{
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
 @media screen and (max-width:557px) {
    body{
  } 
@@ -196,11 +306,40 @@ display:block;
   font-size: 40px;
     text-align: center;
   }
+  h1{
+    margin-bottom: 25px;
+    font-size: 80px;
+    width: 100%;
+  }
+  .podcast{
+    margin-bottom: 40px;
+  }
 
 .btn-5{
     width:150px;
     display: block;
 }
+
+/* about podcast */
+
+
+  .cards{
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about h1{
+    font-size: 28px;
+  }
+
+  .about .someText,
+  .about .someText2{
+    font-size: 14px;
+  }
+  .boxs{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 15px;
+  }
 
     
 }
