@@ -260,14 +260,14 @@ margin: 250px  0x;
 }
 .box{
   background-color: #412567;
-  height: 150px;
+  height: 200px;
   border-radius: 15px;
 }
 .audioQuality{
  
  grid-row: span 2;
-background-color: aqua;
-height: 310px;
+
+height: 410px;
 }
 .box2{
   grid-column: span 2;
@@ -282,7 +282,136 @@ height: 310px;
 .techwave img,h6,p{
   margin-left: 15px;
   margin-top: 10px;
+  color: rgb(113, 125, 134);
 }
+.techwave h6{
+  font-size: 20px;
+  color: white;
+}
+
+/* featured */
+
+.Featured{
+  background-color: #210f3a;
+  padding-top: 30px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Featured h4{
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin: 20px  auto;
+}
+.conteen{
+ 
+  display:flex;
+  justify-content:space-between;
+  gap: 20px;
+  width: 100%;
+  margin: 10px 60px;
+
+}
+.video{
+
+  height: 400px;
+  background-color: #412567;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+/* 
+the host */
+
+.host{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 30px auto;
+ 
+}
+.host-card{
+  background-color:  #210f3a;
+   padding-top: 60px;
+  
+}
+
+.men-card{
+  width:100%;
+
+   display: flex;
+  justify-content: center;
+  gap: 15px;
+ 
+  background-color: #742ec9;
+}
+.host-1{
+  
+}
+.title-men{
+  width: 80%;
+  padding-bottom: 50px;
+  
+}
+.title-men h6{
+  font-size: 25px;
+  color: white;
+  
+}
+.icon-box1{
+  display: flex;
+  justify-content:center;
+}
+.icon-box1{
+
+  background-color: rgb(168, 125, 67);
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.icon-1 img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+
+}
+.icon-1{
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius:50%;
+  background-color: aliceblue;
+}
+
+/* footer */
+
+.footer-conten{
+   background-image:url(./images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.footer-conten h2{
+  text-align: center;
+}
+.footer-links{
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+
+}
+.footer-link{
+    margin-left: 10px;
+}
+.copy{
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 15px;
+}
+
 
 
 @media screen and (max-width:557px) {
@@ -333,13 +462,32 @@ display:block;
   }
 
   .about .someText,
-  .about .someText2{
+  .about .someText2 {
     font-size: 14px;
   }
   .boxs{
     grid-template-columns: repeat(1, 1fr);
     margin: 15px;
   }
-
-    
+  .conteen{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+    margin: 25px;
+  }
+  .video{
+    width: 100%;
+  }
+  .icon-box1{
+    display: grid;
+  }
+  .icon-1{
+    width: 100%;
+    margin: 0 20px;
+  }
+  .men-card{
+    height: 300px;
+  }
+  .icon-box1{
+    display: none;
+  }
 }
